@@ -201,7 +201,7 @@
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--title-color);
 }
 
 .portfolio-photofilter-list-title {
@@ -209,7 +209,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--title-color);
 }
 .portfolio-photofilter-list-discription {
   font-weight: 400;
