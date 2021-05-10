@@ -1,5 +1,6 @@
-.root {
+:root {
   --hover-color: #2196f3;
+  --title-color: #212121;
 }
 
 .list {
@@ -23,23 +24,26 @@
   letter-spacing: 0.03em;
 }
 
-.menu-link {
+.menu-item-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--title-color);
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.menu-item-link:hover,
+.menu-item-link:focus {
   color: var(--hover-color);
 }
 
-.header-contacts {
+.header-contacts-tel-link,
+.header-contacts-mail-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--title-color); /*почему не заработал цвет от предка?*/
 }
 
 .header-contacts-tel-link:hover,
@@ -64,7 +68,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #000000; /*#FFFFFF*/
+  color: var(--title-color); /*#FFFFFF*/
 }
 
 .modal-btn:hover,
@@ -100,7 +104,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--title-color);
 }
 
 .Features-list-item-discription {
@@ -115,3 +119,103 @@
 }
 
 /*features section end*/
+
+/*about section*/
+
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+/*end about section*/
+
+/*team section*/
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.team-list-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team-list-item-position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*end team section*/
+
+/*adress section*/
+
+.adress-list-item-link-map {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  color: tomato; /*  #FFFFFF*/
+}
+
+.adress-list-item-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: rgba(0, 0, 0, 0.6); /*color: rgba(255, 255, 255, 0.6)*/
+}
+
+/*end adress section*/
+
+/*  portfolio section*/
+
+.portfolio-item :hover,
+.portfolio-item:focus {
+  background-color: var(--hover-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.portfolio-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.portfolio-photofilter-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.portfolio-photofilter-list-discription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*  endportfolio section*/
