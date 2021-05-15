@@ -33,16 +33,59 @@ img {
   text-decoration: none;
 }
 
+.section-padding {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
 .body {
   font-family: "Roboto", sans-serif;
 }
 
-/*header*/
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+/*header*/
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  margin-right: 90px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 333px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo-link {
@@ -104,11 +147,13 @@ img {
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: #ffffff;
+
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 .modal-btn:hover,
@@ -129,6 +174,9 @@ img {
   height: 50px;
   left: 700px;
   top: 430px;
+
+  margin-bottom: 200px;
+  border-radius: 10px;
 
   cursor: pointer;
 }
@@ -174,6 +222,9 @@ img {
 /*end about section*/
 
 /*team section*/
+.team-container {
+}
+
 .team {
   background-color: #f5f4fa;
 }
@@ -183,6 +234,34 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.team-list-item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.team-list-item-photo {
+  margin-bottom: 30px;
+}
+
+.team-list-item-dicription {
+  margin-bottom: 60px;
 }
 
 .team-list-item-name {
@@ -191,6 +270,10 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 .team-list-item-position {
   font-weight: 400;
@@ -198,6 +281,9 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--contacts-and-discriptions-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*end team section*/
 
