@@ -141,6 +141,8 @@ img {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  flex-direction: ;
 }
 
 .hero-title {
