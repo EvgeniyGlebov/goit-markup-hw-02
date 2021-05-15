@@ -142,7 +142,8 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  flex-direction: ;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -196,6 +197,8 @@ img {
   text-transform: uppercase;
 
   color: var(--title-color);
+
+  margin-bottom: 10px;
 }
 
 .Features-list-item-discription {
@@ -206,12 +209,34 @@ img {
   line-height: 1.71x;
   letter-spacing: 0.03em;
 
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+
   color: var(--contacts-and-discriptions-color);
+}
+
+.Features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Features-list-item {
+  align-content: flex-start;
+}
+
+.Features-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*features section end*/
 
 /*about section*/
+
+.about {
+  text-align: center;
+}
 
 .about-title {
   font-weight: 700;
@@ -220,6 +245,21 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.about-list-item {
+  flex-basis: calc(100%-90px) / 3;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 /*end about section*/
@@ -339,6 +379,22 @@ img {
 /*end footer section*/
 
 /*  portfolio section*/
+
+.portfolio-container {
+  display: flex;
+}
+
+.portfolio-list {
+  display: flex;
+}
+
+.portfolio-photofilter-list {
+  display: flex;
+}
+
+.portfolio-photofilter-list-item:nth-child(3n) {
+  margin-right: 0px;
+}
 
 .portfolio-item-link {
   background: #f5f4fa;
