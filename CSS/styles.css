@@ -346,6 +346,7 @@ img {
 }
 
 .logo-link-footer {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -393,11 +394,19 @@ img {
 
 /*  portfolio section*/
 
+.portfolio {
+}
+
 .portfolio-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-list {
+  display: flex;
+}
+
+.portfolio-item {
 }
 
 .portfolio-photofilter-list {
