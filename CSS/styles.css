@@ -340,6 +340,15 @@ img {
   background: #2f303a;
 }
 
+.footer-container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.logo-link-footer {
+  margin-bottom: 20px;
+}
+
 .logo-link-firstWord {
   color: var(--hover-color);
 }
@@ -355,7 +364,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.03em;
 
-  color: tomato; /*  #FFFFFF*/
+  color: #ffffff;
 }
 
 .adress-list-item-link {
@@ -376,6 +385,10 @@ img {
   color: #ffffff;
 }
 
+.adress-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 /*end footer section*/
 
 /*  portfolio section*/
@@ -385,11 +398,11 @@ img {
 }
 
 .portfolio-list {
-  display: flex;
 }
 
 .portfolio-photofilter-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-photofilter-list-item:nth-child(3n) {
