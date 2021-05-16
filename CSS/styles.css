@@ -406,6 +406,11 @@ img {
   display: flex;
 }
 
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio-item {
 }
 
